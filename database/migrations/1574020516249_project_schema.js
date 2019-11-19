@@ -14,7 +14,7 @@ class ProjectSchema extends Schema {
         .inTable('users')
         .onUpdate('CASCADE')
         .onDelete('SET NULL')
-      table.string('table').notNullable()
+      table.string('title').notNullable()
       table.text('description').notNullable()
       table.timestamps()
     })
